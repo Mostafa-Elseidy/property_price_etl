@@ -1,9 +1,17 @@
-# ETL pipeline
-Apply ETL steps
+# property_price_etl
+Apply ETL steps with Python and Postgres
 1. extract
+    - request and download data as zip file in source directory
+    - unzip csv in raw directory
 2. create Postgres tables
+    - raw table
+    - clean table
 3. transform
+    - lowercase fields
+    - update date format, description, price 
 4. load
+    - insert new rows
+    - delete any row not present in the last snapshot
 
 ```
 .
@@ -33,7 +41,7 @@ python -m venv .property_price_etl
 source .property_price_etl/bin/activate
 pip install -r requirements.txt
 ```
-### pull Posgres image
+### pull Postgres image
 ```sh
 docker pull postgres:alpine
 ```
