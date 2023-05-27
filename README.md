@@ -1,3 +1,5 @@
+[![ETL with Python and Postgres with Github Actions](https://github.com/Mostafa-Elseidy/property_price_etl/actions/workflows/main.yml/badge.svg)](https://github.com/Mostafa-Elseidy/property_price_etl/actions/workflows/main.yml)
+
 # property_price_etl
 Apply ETL steps with Python and Postgres
 1. extract
