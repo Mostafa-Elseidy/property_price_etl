@@ -127,6 +127,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.property_price_etl/
 
 # Spyder project settings
 .spyderproject
