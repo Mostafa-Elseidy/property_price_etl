@@ -1,0 +1,5 @@
+requests
+sqlalchemy
+psycopg2
+pylint
+black
