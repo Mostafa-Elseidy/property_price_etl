@@ -28,8 +28,7 @@ def insert_transactions():
 
     # Insert the rows from the previously selected transactions
     stm = insert(PprCleanAll).from_select(
-        ["date_of_sale", "address", "postal_code",
-            "county", "price", "description"],
+        ["date_of_sale", "address", "postal_code", "county", "price", "description"],
         transactions_to_insert,
     )
 

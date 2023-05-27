@@ -60,11 +60,7 @@ def save_new_raw_data():
                 print("[Extract] First row example:", row)
 
                 # Open the CSV file in write mode
-                with open(
-                    raw_path,
-                    mode="w",
-                    encoding="windows-1252"
-                ) as csv_file:
+                with open(raw_path, mode="w", encoding="windows-1252") as csv_file:
                     # Rename field names so they're ready for the next step
                     fieldnames = {
                         "Date of Sale (dd/mm/yyyy)": "date_of_sale",
@@ -80,6 +76,7 @@ def save_new_raw_data():
                     for row in reader:
                         # Write all rows in file
                         writer.writerow(row)
+
 
 # Main function called inside the execute.py script
 
